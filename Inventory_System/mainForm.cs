@@ -16,5 +16,20 @@ namespace Inventory_System
         {
             InitializeComponent();
         }
+
+        private void customerButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
