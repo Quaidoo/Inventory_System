@@ -73,9 +73,29 @@ namespace Inventory_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_20px {
+            get {
+                object obj = ResourceManager.GetObject("cancel_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap diversity_96px {
             get {
                 object obj = ResourceManager.GetObject("diversity_96px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_20px {
+            get {
+                object obj = ResourceManager.GetObject("edit_20px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

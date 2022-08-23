@@ -133,8 +133,14 @@
   <data name="logo_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="edit_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Logo2_120px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo2_120px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purchase_order_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\purchase_order_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="diversity_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diversity_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +148,7 @@
   <data name="open_box_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open_box_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="purchase_order_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\purchase_order_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
