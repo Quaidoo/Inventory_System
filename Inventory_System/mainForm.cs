@@ -17,6 +17,24 @@ namespace Inventory_System
             InitializeComponent();
         }
 
+        //to show subform in main form
+
+        public Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
+
         private void customerButton2_Click(object sender, EventArgs e)
         {
 
@@ -33,6 +51,16 @@ namespace Inventory_System
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            openChildForm(new UserForm());
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

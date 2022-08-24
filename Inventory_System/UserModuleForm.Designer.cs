@@ -42,6 +42,8 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.txtRepass = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -82,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 146);
+            this.label2.Location = new System.Drawing.Point(62, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 32);
             this.label2.TabIndex = 1;
@@ -90,14 +92,14 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(204, 146);
+            this.txtUserName.Location = new System.Drawing.Point(264, 119);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(615, 39);
             this.txtUserName.TabIndex = 2;
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(204, 242);
+            this.txtFullName.Location = new System.Drawing.Point(264, 215);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(615, 39);
             this.txtFullName.TabIndex = 4;
@@ -105,7 +107,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 242);
+            this.label3.Location = new System.Drawing.Point(62, 215);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 32);
             this.label3.TabIndex = 3;
@@ -113,7 +115,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(204, 330);
+            this.txtPass.Location = new System.Drawing.Point(264, 303);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(615, 39);
             this.txtPass.TabIndex = 6;
@@ -121,7 +123,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 330);
+            this.label4.Location = new System.Drawing.Point(62, 303);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 32);
             this.label4.TabIndex = 5;
@@ -129,7 +131,7 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(204, 423);
+            this.txtPhone.Location = new System.Drawing.Point(264, 451);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(615, 39);
             this.txtPhone.TabIndex = 8;
@@ -137,7 +139,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(62, 423);
+            this.label5.Location = new System.Drawing.Point(62, 451);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 32);
             this.label5.TabIndex = 7;
@@ -145,16 +147,17 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.Black;
+            this.btnUpdate.BackColor = System.Drawing.Color.DimGray;
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(469, 494);
+            this.btnUpdate.Location = new System.Drawing.Point(617, 517);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(172, 75);
-            this.btnUpdate.TabIndex = 9;
+            this.btnUpdate.Size = new System.Drawing.Size(128, 73);
+            this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClear
             // 
@@ -162,9 +165,9 @@
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(647, 494);
+            this.btnClear.Location = new System.Drawing.Point(751, 517);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(172, 75);
+            this.btnClear.Size = new System.Drawing.Size(128, 73);
             this.btnClear.TabIndex = 10;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -176,19 +179,37 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(291, 494);
+            this.btnSave.Location = new System.Drawing.Point(483, 517);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(172, 75);
+            this.btnSave.Size = new System.Drawing.Size(128, 73);
             this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // txtRepass
+            // 
+            this.txtRepass.Location = new System.Drawing.Point(264, 381);
+            this.txtRepass.Name = "txtRepass";
+            this.txtRepass.Size = new System.Drawing.Size(615, 39);
+            this.txtRepass.TabIndex = 12;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 388);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(209, 32);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Confirm Password:";
             // 
             // UserModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(924, 615);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtRepass);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnUpdate);
@@ -218,16 +239,18 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private TextBox txtUserName;
-        private TextBox txtFullName;
         private Label label3;
-        private TextBox txtPass;
         private Label label4;
-        private TextBox txtPhone;
         private Label label5;
-        private Button btnUpdate;
-        private Button btnClear;
-        private Button btnSave;
         private PictureBox pictureBoxClose;
+        public Button btnUpdate;
+        public Button btnClear;
+        public Button btnSave;
+        private Label label6;
+        public TextBox txtUserName;
+        public TextBox txtFullName;
+        public TextBox txtPass;
+        public TextBox txtPhone;
+        public TextBox txtRepass;
     }
 }

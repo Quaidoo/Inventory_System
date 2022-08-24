@@ -30,9 +30,8 @@ namespace Inventory_System
         {
             try
             {
-                if (txtPass.Text != txtPass
-                    .Text)
-                {
+                if (txtPass.Text != txtRepass.Text)
+                    {
                     MessageBox.Show("Password did not Match!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -71,10 +70,44 @@ namespace Inventory_System
             txtUserName.Clear();
             txtFullName.Clear();
             txtPass.Clear();
+            txtRepass.Clear();
             txtPhone.Clear();
         }
 
-        
+        //start code
+        // when the update button is clicked
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                //throwing exceptions!!
+                if (txtPass.Text != txtRepass.Text)
+                {
+                    MessageBox.Show("Password did not Match!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (MessageBox.Show("Are you sure you want to update this user?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    cm = new SqlCommand("UPDATE tbUser SET fullname = @fullname, password=@password, phone=@phone WHERE username LIKE '" + txtUserName.Text + "' ", con);
+                    cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
+                    cm.Parameters.AddWithValue("@password", txtPass.Text);
+                    cm.Parameters.AddWithValue("@phone", txtPhone.Text);
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("User has been successfully updated!");
+                    this.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
 

@@ -35,20 +35,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.customerButton5 = new Inventory_System.CustomerButton();
-            this.customerButton4 = new Inventory_System.CustomerButton();
-            this.customerButton3 = new Inventory_System.CustomerButton();
-            this.customerButton2 = new Inventory_System.CustomerButton();
-            this.customerButton1 = new Inventory_System.CustomerButton();
+            this.btnOrder = new Inventory_System.CustomerButton();
+            this.btnUser = new Inventory_System.CustomerButton();
+            this.btnCategory = new Inventory_System.CustomerButton();
+            this.btnCustomer = new Inventory_System.CustomerButton();
+            this.btnProduct = new Inventory_System.CustomerButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,11 +59,11 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.customerButton5);
-            this.panel1.Controls.Add(this.customerButton4);
-            this.panel1.Controls.Add(this.customerButton3);
-            this.panel1.Controls.Add(this.customerButton2);
-            this.panel1.Controls.Add(this.customerButton1);
+            this.panel1.Controls.Add(this.btnOrder);
+            this.panel1.Controls.Add(this.btnUser);
+            this.panel1.Controls.Add(this.btnCategory);
+            this.panel1.Controls.Add(this.btnCustomer);
+            this.panel1.Controls.Add(this.btnProduct);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -78,9 +78,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(1297, 82);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 30);
+            this.label6.Size = new System.Drawing.Size(92, 30);
             this.label6.TabIndex = 9;
-            this.label6.Text = "SALES REPORTS";
+            this.label6.Text = "ORDERS";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
@@ -88,11 +88,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1141, 82);
+            this.label5.Location = new System.Drawing.Point(1173, 82);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 30);
+            this.label5.Size = new System.Drawing.Size(73, 30);
             this.label5.TabIndex = 8;
-            this.label5.Text = "ATTENDANTS";
+            this.label5.Text = "USERS";
             // 
             // label4
             // 
@@ -110,11 +110,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(853, 84);
+            this.label3.Location = new System.Drawing.Point(823, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 30);
+            this.label3.Size = new System.Drawing.Size(131, 30);
             this.label3.TabIndex = 6;
-            this.label3.Text = "STOCK";
+            this.label3.Text = "CUSTOMERS";
             // 
             // label2
             // 
@@ -127,67 +127,68 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "PRODUCTS";
             // 
-            // customerButton5
+            // btnOrder
             // 
-            this.customerButton5.Image = global::Inventory_System.Properties.Resources.purchase_order_96px;
-            this.customerButton5.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton5.ImageHover")));
-            this.customerButton5.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton5.Location = new System.Drawing.Point(1337, 27);
-            this.customerButton5.Name = "customerButton5";
-            this.customerButton5.Size = new System.Drawing.Size(65, 52);
-            this.customerButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton5.TabIndex = 4;
-            this.customerButton5.TabStop = false;
+            this.btnOrder.Image = global::Inventory_System.Properties.Resources.purchase_order_96px;
+            this.btnOrder.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnOrder.ImageHover")));
+            this.btnOrder.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
+            this.btnOrder.Location = new System.Drawing.Point(1337, 27);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(65, 52);
+            this.btnOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnOrder.TabIndex = 4;
+            this.btnOrder.TabStop = false;
             // 
-            // customerButton4
+            // btnUser
             // 
-            this.customerButton4.Image = global::Inventory_System.Properties.Resources.user_groups_96px;
-            this.customerButton4.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton4.ImageHover")));
-            this.customerButton4.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton4.Location = new System.Drawing.Point(1181, 29);
-            this.customerButton4.Name = "customerButton4";
-            this.customerButton4.Size = new System.Drawing.Size(65, 52);
-            this.customerButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton4.TabIndex = 3;
-            this.customerButton4.TabStop = false;
+            this.btnUser.Image = global::Inventory_System.Properties.Resources.user_groups_96px;
+            this.btnUser.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnUser.ImageHover")));
+            this.btnUser.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
+            this.btnUser.Location = new System.Drawing.Point(1181, 29);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(65, 52);
+            this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnUser.TabIndex = 3;
+            this.btnUser.TabStop = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
-            // customerButton3
+            // btnCategory
             // 
-            this.customerButton3.Image = global::Inventory_System.Properties.Resources.diversity_96px;
-            this.customerButton3.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton3.ImageHover")));
-            this.customerButton3.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton3.Location = new System.Drawing.Point(1015, 29);
-            this.customerButton3.Name = "customerButton3";
-            this.customerButton3.Size = new System.Drawing.Size(65, 52);
-            this.customerButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton3.TabIndex = 2;
-            this.customerButton3.TabStop = false;
+            this.btnCategory.Image = global::Inventory_System.Properties.Resources.diversity_96px;
+            this.btnCategory.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnCategory.ImageHover")));
+            this.btnCategory.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
+            this.btnCategory.Location = new System.Drawing.Point(1015, 29);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(65, 52);
+            this.btnCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCategory.TabIndex = 2;
+            this.btnCategory.TabStop = false;
             // 
-            // customerButton2
+            // btnCustomer
             // 
-            this.customerButton2.Image = global::Inventory_System.Properties.Resources.people_96px;
-            this.customerButton2.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton2.ImageHover")));
-            this.customerButton2.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton2.Location = new System.Drawing.Point(853, 29);
-            this.customerButton2.Name = "customerButton2";
-            this.customerButton2.Size = new System.Drawing.Size(65, 52);
-            this.customerButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton2.TabIndex = 1;
-            this.customerButton2.TabStop = false;
-            this.customerButton2.Click += new System.EventHandler(this.customerButton2_Click);
+            this.btnCustomer.Image = global::Inventory_System.Properties.Resources.people_96px;
+            this.btnCustomer.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnCustomer.ImageHover")));
+            this.btnCustomer.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
+            this.btnCustomer.Location = new System.Drawing.Point(853, 29);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(65, 52);
+            this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCustomer.TabIndex = 1;
+            this.btnCustomer.TabStop = false;
+            this.btnCustomer.Click += new System.EventHandler(this.customerButton2_Click);
             // 
-            // customerButton1
+            // btnProduct
             // 
-            this.customerButton1.Image = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton1.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton1.ImageHover")));
-            this.customerButton1.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton1.Location = new System.Drawing.Point(726, 29);
-            this.customerButton1.Name = "customerButton1";
-            this.customerButton1.Size = new System.Drawing.Size(65, 52);
-            this.customerButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customerButton1.TabIndex = 0;
-            this.customerButton1.TabStop = false;
-            this.customerButton1.Click += new System.EventHandler(this.customerButton1_Click);
+            this.btnProduct.Image = global::Inventory_System.Properties.Resources.box_96px;
+            this.btnProduct.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnProduct.ImageHover")));
+            this.btnProduct.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
+            this.btnProduct.Location = new System.Drawing.Point(726, 29);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(65, 52);
+            this.btnProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnProduct.TabIndex = 0;
+            this.btnProduct.TabStop = false;
+            this.btnProduct.Click += new System.EventHandler(this.customerButton1_Click);
             // 
             // label1
             // 
@@ -210,31 +211,33 @@
             this.panel2.Size = new System.Drawing.Size(1494, 34);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // panelMain
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 163);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1494, 638);
-            this.panel3.TabIndex = 2;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 163);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1494, 638);
+            this.panelMain.TabIndex = 2;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1494, 835);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "mainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,13 +247,13 @@
         private Panel panel1;
         private Label label1;
         private Panel panel2;
-        private Panel panel3;
-        private CustomerButton customerButton1;
-        private CustomerButton customerButton2;
+        private Panel panelMain;
+        private CustomerButton btnProduct;
+        private CustomerButton btnCustomer;
         private Label label2;
-        private CustomerButton customerButton5;
-        private CustomerButton customerButton4;
-        private CustomerButton customerButton3;
+        private CustomerButton btnOrder;
+        private CustomerButton btnUser;
+        private CustomerButton btnCategory;
         private Label label6;
         private Label label5;
         private Label label4;
