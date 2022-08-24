@@ -58,6 +58,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(924, 95);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBoxClose
             // 
@@ -80,6 +81,7 @@
             this.label1.Size = new System.Drawing.Size(182, 37);
             this.label1.TabIndex = 1;
             this.label1.Text = "User Module";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -89,6 +91,7 @@
             this.label2.Size = new System.Drawing.Size(126, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Username:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtUserName
             // 
@@ -96,6 +99,7 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(615, 39);
             this.txtUserName.TabIndex = 2;
+            this.txtUserName.TextChanged += new System.EventHandler(this.txtUserName_TextChanged);
             // 
             // txtFullName
             // 
@@ -103,6 +107,7 @@
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(615, 39);
             this.txtFullName.TabIndex = 4;
+            this.txtFullName.TextChanged += new System.EventHandler(this.txtFullName_TextChanged);
             // 
             // label3
             // 
@@ -112,6 +117,7 @@
             this.label3.Size = new System.Drawing.Size(117, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Fullname:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtPass
             // 
@@ -119,6 +125,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(615, 39);
             this.txtPass.TabIndex = 6;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // label4
             // 
@@ -128,6 +135,7 @@
             this.label4.Size = new System.Drawing.Size(116, 32);
             this.label4.TabIndex = 5;
             this.label4.Text = "Password:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtPhone
             // 
@@ -135,6 +143,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(615, 39);
             this.txtPhone.TabIndex = 8;
+            this.txtPhone.TextChanged += new System.EventHandler(this.txtPhone_TextChanged);
             // 
             // label5
             // 
@@ -144,6 +153,7 @@
             this.label5.Size = new System.Drawing.Size(87, 32);
             this.label5.TabIndex = 7;
             this.label5.Text = "Phone:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnUpdate
             // 
@@ -193,6 +203,7 @@
             this.txtRepass.Name = "txtRepass";
             this.txtRepass.Size = new System.Drawing.Size(615, 39);
             this.txtRepass.TabIndex = 12;
+            this.txtRepass.TextChanged += new System.EventHandler(this.txtRepass_TextChanged);
             // 
             // label6
             // 
@@ -202,6 +213,7 @@
             this.label6.Size = new System.Drawing.Size(209, 32);
             this.label6.TabIndex = 13;
             this.label6.Text = "Confirm Password:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // UserModuleForm
             // 
@@ -226,6 +238,7 @@
             this.Name = "UserModuleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserModuleForm";
+            this.Load += new System.EventHandler(this.UserModuleForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();

@@ -35,10 +35,7 @@ namespace Inventory_System
 
         }
 
-        private void customerButton2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -63,6 +60,11 @@ namespace Inventory_System
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            openChildForm(new CustomerForm());
         }
     }
 }

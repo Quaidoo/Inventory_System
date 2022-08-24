@@ -33,36 +33,36 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOrder = new Inventory_System.CustomerButton();
             this.btnUser = new Inventory_System.CustomerButton();
             this.btnCategory = new Inventory_System.CustomerButton();
-            this.btnCustomer = new Inventory_System.CustomerButton();
             this.btnProduct = new Inventory_System.CustomerButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.btnCustomer = new Inventory_System.CustomerButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnCustomer);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnOrder);
             this.panel1.Controls.Add(this.btnUser);
             this.panel1.Controls.Add(this.btnCategory);
-            this.panel1.Controls.Add(this.btnCustomer);
             this.panel1.Controls.Add(this.btnProduct);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -104,17 +104,6 @@
             this.label4.Size = new System.Drawing.Size(131, 30);
             this.label4.TabIndex = 7;
             this.label4.Text = "CATEGORIES";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(823, 84);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 30);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "CUSTOMERS";
             // 
             // label2
             // 
@@ -164,19 +153,6 @@
             this.btnCategory.TabIndex = 2;
             this.btnCategory.TabStop = false;
             // 
-            // btnCustomer
-            // 
-            this.btnCustomer.Image = global::Inventory_System.Properties.Resources.people_96px;
-            this.btnCustomer.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnCustomer.ImageHover")));
-            this.btnCustomer.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.btnCustomer.Location = new System.Drawing.Point(853, 29);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(65, 52);
-            this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCustomer.TabIndex = 1;
-            this.btnCustomer.TabStop = false;
-            this.btnCustomer.Click += new System.EventHandler(this.customerButton2_Click);
-            // 
             // btnProduct
             // 
             this.btnProduct.Image = global::Inventory_System.Properties.Resources.box_96px;
@@ -220,6 +196,30 @@
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // btnCustomer
+            // 
+            this.btnCustomer.Image = global::Inventory_System.Properties.Resources.people_96px;
+            this.btnCustomer.ImageHover = null;
+            this.btnCustomer.ImageNormal = null;
+            this.btnCustomer.Location = new System.Drawing.Point(867, 29);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(65, 52);
+            this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCustomer.TabIndex = 10;
+            this.btnCustomer.TabStop = false;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(839, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(131, 30);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "CUSTOMERS";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -236,8 +236,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -249,7 +249,6 @@
         private Panel panel2;
         private Panel panelMain;
         private CustomerButton btnProduct;
-        private CustomerButton btnCustomer;
         private Label label2;
         private CustomerButton btnOrder;
         private CustomerButton btnUser;
@@ -258,5 +257,6 @@
         private Label label5;
         private Label label4;
         private Label label3;
+        private CustomerButton btnCustomer;
     }
 }
