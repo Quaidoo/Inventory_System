@@ -76,29 +76,30 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1369, 80);
+            this.label6.Location = new System.Drawing.Point(1297, 82);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 30);
+            this.label6.Size = new System.Drawing.Size(162, 30);
             this.label6.TabIndex = 9;
-            this.label6.Text = "ORDERS";
+            this.label6.Text = "SALES REPORTS";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1246, 78);
+            this.label5.Location = new System.Drawing.Point(1141, 82);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 30);
+            this.label5.Size = new System.Drawing.Size(140, 30);
             this.label5.TabIndex = 8;
-            this.label5.Text = "USERS";
+            this.label5.Text = "ATTENDANTS";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1077, 80);
+            this.label4.Location = new System.Drawing.Point(983, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 30);
             this.label4.TabIndex = 7;
@@ -109,18 +110,18 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(912, 78);
+            this.label3.Location = new System.Drawing.Point(853, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 30);
+            this.label3.Size = new System.Drawing.Size(75, 30);
             this.label3.TabIndex = 6;
-            this.label3.Text = "ATTENDANTS";
+            this.label3.Text = "STOCK";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(763, 80);
+            this.label2.Location = new System.Drawing.Point(699, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 30);
             this.label2.TabIndex = 5;
@@ -131,7 +132,7 @@
             this.customerButton5.Image = global::Inventory_System.Properties.Resources.purchase_order_96px;
             this.customerButton5.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton5.ImageHover")));
             this.customerButton5.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton5.Location = new System.Drawing.Point(1379, 25);
+            this.customerButton5.Location = new System.Drawing.Point(1337, 27);
             this.customerButton5.Name = "customerButton5";
             this.customerButton5.Size = new System.Drawing.Size(65, 52);
             this.customerButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -143,7 +144,7 @@
             this.customerButton4.Image = global::Inventory_System.Properties.Resources.user_groups_96px;
             this.customerButton4.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton4.ImageHover")));
             this.customerButton4.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton4.Location = new System.Drawing.Point(1254, 25);
+            this.customerButton4.Location = new System.Drawing.Point(1181, 29);
             this.customerButton4.Name = "customerButton4";
             this.customerButton4.Size = new System.Drawing.Size(65, 52);
             this.customerButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -155,7 +156,7 @@
             this.customerButton3.Image = global::Inventory_System.Properties.Resources.diversity_96px;
             this.customerButton3.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton3.ImageHover")));
             this.customerButton3.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton3.Location = new System.Drawing.Point(1109, 25);
+            this.customerButton3.Location = new System.Drawing.Point(1015, 29);
             this.customerButton3.Name = "customerButton3";
             this.customerButton3.Size = new System.Drawing.Size(65, 52);
             this.customerButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,7 +168,7 @@
             this.customerButton2.Image = global::Inventory_System.Properties.Resources.people_96px;
             this.customerButton2.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton2.ImageHover")));
             this.customerButton2.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton2.Location = new System.Drawing.Point(955, 25);
+            this.customerButton2.Location = new System.Drawing.Point(853, 29);
             this.customerButton2.Name = "customerButton2";
             this.customerButton2.Size = new System.Drawing.Size(65, 52);
             this.customerButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -180,7 +181,7 @@
             this.customerButton1.Image = global::Inventory_System.Properties.Resources.box_96px;
             this.customerButton1.ImageHover = ((System.Drawing.Image)(resources.GetObject("customerButton1.ImageHover")));
             this.customerButton1.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.customerButton1.Location = new System.Drawing.Point(790, 25);
+            this.customerButton1.Location = new System.Drawing.Point(726, 29);
             this.customerButton1.Name = "customerButton1";
             this.customerButton1.Size = new System.Drawing.Size(65, 52);
             this.customerButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
