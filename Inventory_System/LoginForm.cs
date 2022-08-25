@@ -17,6 +17,8 @@ namespace Inventory_System
             InitializeComponent();
         }
 
+
+        //show Password 
         private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxPass.Checked == false)
@@ -44,6 +46,11 @@ namespace Inventory_System
             {
                 Application.Exit();
             }
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

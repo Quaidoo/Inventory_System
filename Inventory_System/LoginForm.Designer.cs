@@ -128,6 +128,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(422, 39);
             this.txtPass.TabIndex = 10;
+            this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
             // pictureBox1
             // 
