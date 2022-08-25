@@ -63,6 +63,16 @@ namespace Inventory_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _60f06e214425cbc5b3c5ae04_Spend_Management_Grain_p_2000_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("60f06e214425cbc5b3c5ae04_Spend-Management-Grain-p-2000-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add_24px {
             get {
                 object obj = ResourceManager.GetObject("add_24px", resourceCulture);
@@ -186,6 +196,36 @@ namespace Inventory_System.Properties {
         internal static System.Drawing.Bitmap Screenshot_2022_08_21_at_12_40_40_PM {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2022-08-21 at 12.40.40 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sputclick_final_01_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("sputclick_final-01-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sputclick_final_01_removebg_preview_2 {
+            get {
+                object obj = ResourceManager.GetObject("sputclick_final-01-removebg-preview-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sputclick_final_01_removebg_preview_21 {
+            get {
+                object obj = ResourceManager.GetObject("sputclick_final-01-removebg-preview-21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

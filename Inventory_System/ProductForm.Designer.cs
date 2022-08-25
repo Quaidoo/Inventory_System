@@ -30,9 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.btnAdd = new Inventory_System.CustomerButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,8 +39,11 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnAdd = new Inventory_System.CustomerButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAdd)).BeginInit();
             this.panel1.SuspendLayout();
@@ -82,44 +82,6 @@
             this.dgvProduct.Size = new System.Drawing.Size(1527, 551);
             this.dgvProduct.TabIndex = 6;
             this.dgvProduct.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProduct_CellContentClick);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.Image = global::Inventory_System.Properties.Resources.add_24px;
-            this.btnAdd.ImageHover = global::Inventory_System.Properties.Resources.add1_24px;
-            this.btnAdd.ImageNormal = global::Inventory_System.Properties.Resources.add_24px;
-            this.btnAdd.Location = new System.Drawing.Point(1470, 19);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(54, 44);
-            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnAdd.TabIndex = 1;
-            this.btnAdd.TabStop = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(124)))), ((int)(((byte)(172)))));
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txtSearch);
-            this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel1.Location = new System.Drawing.Point(0, 551);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1527, 71);
-            this.panel1.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(41, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Products";
             // 
             // Column7
             // 
@@ -194,13 +156,32 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 10;
             // 
-            // txtSearch
+            // btnAdd
             // 
-            this.txtSearch.Location = new System.Drawing.Point(641, 20);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(639, 39);
-            this.txtSearch.TabIndex = 2;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            this.btnAdd.Image = global::Inventory_System.Properties.Resources.add_24px;
+            this.btnAdd.ImageHover = global::Inventory_System.Properties.Resources.add1_24px;
+            this.btnAdd.ImageNormal = global::Inventory_System.Properties.Resources.add_24px;
+            this.btnAdd.Location = new System.Drawing.Point(1470, 19);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(54, 44);
+            this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.TabStop = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(38)))), ((int)(((byte)(75)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.txtSearch);
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.panel1.Location = new System.Drawing.Point(0, 551);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1527, 71);
+            this.panel1.TabIndex = 7;
             // 
             // label2
             // 
@@ -212,6 +193,25 @@
             this.label2.Size = new System.Drawing.Size(96, 32);
             this.label2.TabIndex = 3;
             this.label2.Text = "Search:";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(641, 20);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(639, 39);
+            this.txtSearch.TabIndex = 2;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(41, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(215, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manage Products";
             // 
             // ProductForm
             // 

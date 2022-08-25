@@ -37,15 +37,17 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(60)))), ((int)(((byte)(83)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBoxClose);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -105,7 +107,7 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(38)))), ((int)(((byte)(75)))));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(75, 581);
             this.btnLogin.Name = "btnLogin";
@@ -130,22 +132,34 @@
             this.txtPass.TabIndex = 10;
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            this.pictureBox1.Image = global::Inventory_System.Properties.Resources.R_8e6324986a544d9a28adc3065369e266_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(115, 121);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(335, 175);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox2.Image = global::Inventory_System.Properties.Resources.sputclick_final_01_removebg_preview_21;
+            this.pictureBox2.Location = new System.Drawing.Point(125, 72);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(314, 263);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 32);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Log In";
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(558, 874);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnLogin);
@@ -159,8 +173,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,6 +192,7 @@
         private TextBox txtName;
         private TextBox txtPass;
         private PictureBox pictureBoxClose;
-        private PictureBox pictureBox1;
+        private Label label1;
+        private PictureBox pictureBox2;
     }
 }
