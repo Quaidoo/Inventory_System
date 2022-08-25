@@ -173,6 +173,16 @@ namespace Inventory_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap R_8e6324986a544d9a28adc3065369e266_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("R.8e6324986a544d9a28adc3065369e266-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2022_08_21_at_12_40_40_PM {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2022-08-21 at 12.40.40 PM", resourceCulture);

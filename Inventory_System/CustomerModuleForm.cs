@@ -56,6 +56,8 @@ namespace Inventory_System
             txtCPhone.Clear();
         }
 
+
+        //Clear button--removing all contents inthe textbox
         private void btnClear_Click(object sender, EventArgs e)
         {
             Clear();
@@ -63,9 +65,42 @@ namespace Inventory_System
             btnUpdate.Enabled = false; 
         }
 
+        //close button
         private void pictureBoxClose_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Dispose();//exist the diplayed screen
+
+        }
+
+        private void lblCId_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //Update button for Customners
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure you want to update this Customer?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+
+                    cm = new SqlCommand("UPDATE tbCustomer SET cname = @cname,cphone=@cphone WHERE cid LIKE '" + lblCId.Text + "' ", con);
+                    cm.Parameters.AddWithValue("@cname", txtCName.Text);
+                    cm.Parameters.AddWithValue("@cphone", txtCPhone.Text);
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Customer has been successfully updated!");
+                    this.Dispose();
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
