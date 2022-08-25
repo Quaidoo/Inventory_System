@@ -42,9 +42,10 @@ namespace Inventory_System
             con.Close();
         }
 
+        //add button
         private void btnAdd_Click(object sender, EventArgs e)
         {
- 
+        // it displays the CustomerModuleForm
             CustomerModuleForm moduleForm = new CustomerModuleForm();
             moduleForm.btnSave.Enabled = true;
             moduleForm.btnUpdate.Enabled = false;
@@ -52,6 +53,9 @@ namespace Inventory_System
             LoadCustomer();
         }
 
+
+        //start of Code
+        //editing and deleting of customers
         private void dgvCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string colName = dgvCustomer.Columns[e.ColumnIndex].Name;

@@ -1,6 +1,6 @@
 ﻿namespace Inventory_System
 {
-    partial class CustomerModuleForm
+    partial class CategoryModuleForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnClear = new System.Windows.Forms.Button();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblCatId = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnSave = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.txtCPhone = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCName = new System.Windows.Forms.TextBox();
+            this.txtCatName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblCId = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // btnClear
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
-            this.panel1.Controls.Add(this.pictureBoxClose);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(995, 95);
-            this.panel1.TabIndex = 14;
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(737, 341);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(138, 73);
+            this.btnClear.TabIndex = 32;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // pictureBoxClose
             // 
             this.pictureBoxClose.Image = global::Inventory_System.Properties.Resources.Screenshot_2022_08_21_at_12_40_40_PM;
-            this.pictureBoxClose.Location = new System.Drawing.Point(936, 20);
+            this.pictureBoxClose.Location = new System.Drawing.Point(910, 24);
             this.pictureBoxClose.Name = "pictureBoxClose";
             this.pictureBoxClose.Size = new System.Drawing.Size(36, 53);
             this.pictureBoxClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -70,39 +71,45 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(26, 24);
+            this.label1.Location = new System.Drawing.Point(33, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 37);
+            this.label1.Size = new System.Drawing.Size(240, 37);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Customer Module";
+            this.label1.Text = "Category Module";
+            // 
+            // lblCatId
+            // 
+            this.lblCatId.AutoSize = true;
+            this.lblCatId.Location = new System.Drawing.Point(104, 361);
+            this.lblCatId.Name = "lblCatId";
+            this.lblCatId.Size = new System.Drawing.Size(138, 32);
+            this.lblCatId.TabIndex = 35;
+            this.lblCatId.Text = "Category Id";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
+            this.panel1.Controls.Add(this.pictureBoxClose);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(967, 95);
+            this.panel1.TabIndex = 27;
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(124)))), ((int)(((byte)(172)))));
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(454, 434);
+            this.btnSave.Location = new System.Drawing.Point(447, 341);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(138, 73);
-            this.btnSave.TabIndex = 25;
+            this.btnSave.TabIndex = 34;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(143)))), ((int)(((byte)(8)))), ((int)(((byte)(94)))));
-            this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(743, 434);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(138, 73);
-            this.btnClear.TabIndex = 23;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -110,78 +117,50 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(599, 434);
+            this.btnUpdate.Location = new System.Drawing.Point(593, 341);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(138, 73);
-            this.btnUpdate.TabIndex = 24;
+            this.btnUpdate.TabIndex = 33;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // txtCPhone
+            // txtCatName
             // 
-            this.txtCPhone.Location = new System.Drawing.Point(225, 324);
-            this.txtCPhone.Name = "txtCPhone";
-            this.txtCPhone.Size = new System.Drawing.Size(662, 39);
-            this.txtCPhone.TabIndex = 22;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(110, 331);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 32);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Phone:";
-            // 
-            // txtCName
-            // 
-            this.txtCName.Location = new System.Drawing.Point(225, 224);
-            this.txtCName.Name = "txtCName";
-            this.txtCName.Size = new System.Drawing.Size(662, 39);
-            this.txtCName.TabIndex = 16;
+            this.txtCatName.Location = new System.Drawing.Point(267, 197);
+            this.txtCatName.Name = "txtCatName";
+            this.txtCatName.Size = new System.Drawing.Size(614, 39);
+            this.txtCatName.TabIndex = 29;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 224);
+            this.label2.Location = new System.Drawing.Point(55, 200);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 32);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "Name:";
+            this.label2.Size = new System.Drawing.Size(187, 32);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Category Name:";
             // 
-            // lblCId
-            // 
-            this.lblCId.AutoSize = true;
-            this.lblCId.Location = new System.Drawing.Point(110, 454);
-            this.lblCId.Name = "lblCId";
-            this.lblCId.Size = new System.Drawing.Size(145, 32);
-            this.lblCId.TabIndex = 26;
-            this.lblCId.Text = "Customer Id";
-            this.lblCId.Click += new System.EventHandler(this.lblCId_Click);
-            // 
-            // CustomerModuleForm
+            // CategoryModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 615);
-            this.Controls.Add(this.lblCId);
+            this.ClientSize = new System.Drawing.Size(967, 544);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.lblCatId);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.txtCPhone);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtCName);
+            this.Controls.Add(this.txtCatName);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CustomerModuleForm";
+            this.Name = "CategoryModuleForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CustomerModuleForm";
+            this.Text = "CategoryModuleForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,16 +168,14 @@
 
         #endregion
 
-        private Panel panel1;
+        public Button btnClear;
         private PictureBox pictureBoxClose;
         private Label label1;
+        public Label lblCatId;
+        private Panel panel1;
         public Button btnSave;
-        public Button btnClear;
         public Button btnUpdate;
-        public TextBox txtCPhone;
-        private Label label5;
-        public TextBox txtCName;
+        public TextBox txtCatName;
         private Label label2;
-        public Label lblCId;
     }
 }
