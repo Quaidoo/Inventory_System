@@ -113,6 +113,16 @@ namespace Inventory_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cancel_24px {
+            get {
+                object obj = ResourceManager.GetObject("cancel_24px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap diversity_96px {
             get {
                 object obj = ResourceManager.GetObject("diversity_96px", resourceCulture);
@@ -126,6 +136,16 @@ namespace Inventory_System.Properties {
         internal static System.Drawing.Bitmap edit_20px {
             get {
                 object obj = ResourceManager.GetObject("edit_20px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap focused_african_american_cashier_scanning_goods_checkout {
+            get {
+                object obj = ResourceManager.GetObject("focused-african-american-cashier-scanning-goods-checkout", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +216,16 @@ namespace Inventory_System.Properties {
         internal static System.Drawing.Bitmap Screenshot_2022_08_21_at_12_40_40_PM {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2022-08-21 at 12.40.40 PM", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap smiling_young_customer_holding_bottle_oil {
+            get {
+                object obj = ResourceManager.GetObject("smiling-young-customer-holding-bottle-oil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

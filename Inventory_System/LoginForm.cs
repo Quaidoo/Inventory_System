@@ -27,12 +27,13 @@ namespace Inventory_System
         //show Password 
         private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxPass.Checked == false)
-                txtPass.UseSystemPasswordChar = true;
-            else
+            if (checkBoxPass.Checked == true)
                 txtPass.UseSystemPasswordChar = false;
+            else
+                txtPass.UseSystemPasswordChar = true;
         }
 
+        //fetching
         private void btnLogin_Click(object sender, EventArgs e)
         {
             try
@@ -45,7 +46,7 @@ namespace Inventory_System
                 dr.Read();
                 if (dr.HasRows)
                 {
-                    MessageBox.Show("welcome" + dr["fullname"].ToString() + "|" ,"ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("welcome " + dr["fullname"].ToString() + " | " ,"ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     mainForm main = new mainForm();
                     main.ShowDialog();
                 }
@@ -74,18 +75,21 @@ namespace Inventory_System
             txtPass.Clear();
         }
 
-        private void pictureBoxClose_Click(object sender, EventArgs e)
-        {
-           //When the close icon is clicked
-            if (MessageBox.Show("Exit Applicaton", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-        }
+        
 
         private void txtPass_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBoxClose_Click_1(object sender, EventArgs e)
+        {
+
+            //When the close icon is clicked
+            if (MessageBox.Show("Exit Applicaton", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
