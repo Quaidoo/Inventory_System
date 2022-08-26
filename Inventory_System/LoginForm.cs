@@ -35,7 +35,9 @@ namespace Inventory_System
 
         //fetching
         private void btnLogin_Click(object sender, EventArgs e)
+           
         {
+        
             try
             {
                 cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password",con);
@@ -57,6 +59,7 @@ namespace Inventory_System
 
                 }
                 con.Close();
+
 
 
 

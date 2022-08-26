@@ -201,5 +201,16 @@ namespace Inventory_System
             dr.Close();
             con.Close();
         }
+
+       
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+           
+
+
+
+
+        }
     }
 }
