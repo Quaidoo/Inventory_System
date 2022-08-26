@@ -30,26 +30,29 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUser = new Inventory_System.CustomerButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnProduct = new Inventory_System.CustomerButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnCustomer = new Inventory_System.CustomerButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnOrder = new Inventory_System.CustomerButton();
-            this.btnUser = new Inventory_System.CustomerButton();
             this.btnCategory = new Inventory_System.CustomerButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnCustomer = new Inventory_System.CustomerButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelMain = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).BeginInit();
+            this.panelMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,6 +74,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1555, 163);
             this.panel1.TabIndex = 0;
+            // 
+            // btnUser
+            // 
+            this.btnUser.Image = global::Inventory_System.Properties.Resources.user_groups_96px;
+            this.btnUser.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnUser.ImageHover")));
+            this.btnUser.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
+            this.btnUser.Location = new System.Drawing.Point(1317, 44);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(65, 52);
+            this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnUser.TabIndex = 3;
+            this.btnUser.TabStop = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // pictureBox1
             // 
@@ -95,75 +111,6 @@
             this.btnProduct.TabStop = false;
             this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(999, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 30);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "CUSTOMERS";
-            // 
-            // btnCustomer
-            // 
-            this.btnCustomer.Image = global::Inventory_System.Properties.Resources.people_96px;
-            this.btnCustomer.ImageHover = null;
-            this.btnCustomer.ImageNormal = null;
-            this.btnCustomer.Location = new System.Drawing.Point(1027, 42);
-            this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(65, 52);
-            this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCustomer.TabIndex = 10;
-            this.btnCustomer.TabStop = false;
-            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(1439, 97);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 30);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "ORDERS";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(1317, 97);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 30);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "USERS";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1155, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 30);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "CATEGORIES";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(864, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 30);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "PRODUCTS";
-            // 
             // btnOrder
             // 
             this.btnOrder.Image = global::Inventory_System.Properties.Resources.purchase_order_96px;
@@ -176,19 +123,6 @@
             this.btnOrder.TabIndex = 4;
             this.btnOrder.TabStop = false;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
-            // 
-            // btnUser
-            // 
-            this.btnUser.Image = global::Inventory_System.Properties.Resources.user_groups_96px;
-            this.btnUser.ImageHover = ((System.Drawing.Image)(resources.GetObject("btnUser.ImageHover")));
-            this.btnUser.ImageNormal = global::Inventory_System.Properties.Resources.box_96px;
-            this.btnUser.Location = new System.Drawing.Point(1317, 44);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(65, 52);
-            this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnUser.TabIndex = 3;
-            this.btnUser.TabStop = false;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnCategory
             // 
@@ -203,30 +137,110 @@
             this.btnCategory.TabStop = false;
             this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(1317, 97);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 30);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "USERS";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(999, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(131, 30);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "CUSTOMERS";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(1155, 99);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 30);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "CATEGORIES";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(1439, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 30);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "ORDERS";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // btnCustomer
+            // 
+            this.btnCustomer.Image = global::Inventory_System.Properties.Resources.people_96px;
+            this.btnCustomer.ImageHover = null;
+            this.btnCustomer.ImageNormal = null;
+            this.btnCustomer.Location = new System.Drawing.Point(1027, 42);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Size = new System.Drawing.Size(65, 52);
+            this.btnCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCustomer.TabIndex = 10;
+            this.btnCustomer.TabStop = false;
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(864, 99);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(118, 30);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "PRODUCTS";
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(60)))), ((int)(((byte)(83)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(0, 801);
+            this.panel2.Location = new System.Drawing.Point(0, 865);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1555, 34);
             this.panel2.TabIndex = 1;
             // 
             // panelMain
             // 
+            this.panelMain.Controls.Add(this.pictureBox2);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(0, 163);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1555, 638);
+            this.panelMain.Size = new System.Drawing.Size(1555, 702);
             this.panelMain.TabIndex = 2;
             this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Inventory_System.Properties.Resources.focused_african_american_cashier_scanning_goods_checkout;
+            this.pictureBox2.Location = new System.Drawing.Point(-263, -192);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(2070, 1044);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1555, 835);
+            this.ClientSize = new System.Drawing.Size(1555, 899);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -236,12 +250,14 @@
             this.Text = "SHOP RITE";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProduct)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCustomer)).EndInit();
+            this.panelMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -262,5 +278,6 @@
         private CustomerButton btnCustomer;
         private PictureBox pictureBox1;
         private CustomerButton btnProduct;
+        private PictureBox pictureBox2;
     }
 }

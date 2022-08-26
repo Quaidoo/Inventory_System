@@ -46,7 +46,7 @@ namespace Inventory_System
                 dr.Read();
                 if (dr.HasRows)
                 {
-                    MessageBox.Show("welcome " + dr["fullname"].ToString() + " | " ,"ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("welcome " + dr["fullname"].ToString(),"ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     mainForm main = new mainForm();
                     main.ShowDialog();
                 }
