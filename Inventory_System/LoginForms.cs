@@ -45,14 +45,12 @@ namespace Inventory_System
         private void btnLogin_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=\\Mac\Home\Documents\dbMS.mdf;Integrated Security=True;Connect Timeout=30 ");
-            SqlCommand cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password", con);
+            SqlCommand cm = new SqlCommand("SELECT * FROM tbUser WHERE username='"+txtName.Text+"' AND password='"+ txtPass.Text+"'" ,con);
             SqlDataAdapter sda = new SqlDataAdapter(cm);
             DataTable dt = new DataTable();
             sda.Fill(dt);
-            cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password", con);
-            cm.Parameters.AddWithValue("@username", txtName.Text);
-            cm.Parameters.AddWithValue("@password", txtPass.Text);
-            con.Open();
+            
+   
             string cmbItemValue = comboBox1.SelectedItem.ToString();
             if (dt.Rows.Count > 0)
             {
@@ -61,7 +59,7 @@ namespace Inventory_System
                 {
                     if (dt.Rows[i]["usertype"].ToString() == cmbItemValue)
                     {
-                        MessageBox.Show("You are Logged in as" + dt.Rows[i][2]);
+                        MessageBox.Show("You are Logged in as " + dt.Rows[i][1]);
                         if (comboBox1.SelectedIndex == 0)
                         {
                             mainForm m = new mainForm();
@@ -84,7 +82,7 @@ namespace Inventory_System
                 MessageBox.Show("Error");
 
             }
-            con.Close();
+            
         }
 
         private void lblClear_Click(object sender, EventArgs e)
