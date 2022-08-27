@@ -51,11 +51,11 @@ namespace Inventory_System
             {
                 MessageBox.Show("Error"); 
 
-            }
+            } */
 
 
 
-            /*try
+            try
              {
                  cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password",con);
                  cm.Parameters.AddWithValue("@username", txtName.Text);
@@ -85,7 +85,7 @@ namespace Inventory_System
              {
 
                  MessageBox.Show(ex.Message);
-             }*/
+             }
         }
 
         private void lblClear_Click(object sender, EventArgs e)

@@ -51,5 +51,18 @@ namespace Inventory_System
         {
             openChildForm(new OrderForm());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit Applicaton", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
