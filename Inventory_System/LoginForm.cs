@@ -37,38 +37,55 @@ namespace Inventory_System
         private void btnLogin_Click(object sender, EventArgs e)
            
         {
-        
-            try
+           /* SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=\\Mac\Home\Documents\dbMS.mdf;Integrated Security=True;Connect Timeout=30 ");
+            SqlCommand cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password", con);
+            SqlDataAdapter sda= new SqlDataAdapter(cm);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            if(dt.Rows.Count>0)
             {
-                cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password",con);
-                cm.Parameters.AddWithValue("@username", txtName.Text);
-                cm.Parameters.AddWithValue("@password", txtPass.Text);
-                con.Open();
-                dr = cm.ExecuteReader();
-                dr.Read();
-                if (dr.HasRows)
-                {
-                    MessageBox.Show("welcome " + dr["fullname"].ToString(),"ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    mainForm main = new mainForm();
-                    main.ShowDialog();
-                }
-
-                else
-                {
-                    MessageBox.Show("Invalid username or password!", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                }
-                con.Close();
-
-
-
+                if(int=0,)
+            }
+            else
+            {
+                MessageBox.Show("Error"); 
 
             }
-            catch (Exception ex)
-            {
 
-                MessageBox.Show(ex.Message);
-            }
+
+
+            /*try
+             {
+                 cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password",con);
+                 cm.Parameters.AddWithValue("@username", txtName.Text);
+                 cm.Parameters.AddWithValue("@password", txtPass.Text);
+                 con.Open();
+                 dr = cm.ExecuteReader();
+                 dr.Read();
+                 if (dr.HasRows)
+                 {
+                     MessageBox.Show("welcome " + dr["fullname"].ToString(),"ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                     mainForm main = new mainForm();
+                     main.ShowDialog();
+                 }
+
+                 else
+                 {
+                     MessageBox.Show("Invalid username or password!", "ACCESS DENIED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                 }
+                 con.Close();
+
+
+
+
+             }
+             catch (Exception ex)
+             {
+
+                 MessageBox.Show(ex.Message);
+             }*/
         }
 
         private void lblClear_Click(object sender, EventArgs e)

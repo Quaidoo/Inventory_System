@@ -39,6 +39,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBoxClose = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
@@ -66,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(632, 473);
+            this.label3.Location = new System.Drawing.Point(632, 442);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 32);
             this.label3.TabIndex = 5;
@@ -114,7 +116,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(632, 518);
+            this.txtPass.Location = new System.Drawing.Point(632, 487);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(614, 39);
             this.txtPass.TabIndex = 10;
@@ -152,12 +154,34 @@
             this.pictureBoxClose.TabStop = false;
             this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click_1);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Admin",
+            "Attendant"});
+            this.comboBox1.Location = new System.Drawing.Point(1004, 563);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(242, 40);
+            this.comboBox1.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(646, 571);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 32);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Role:";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1445, 933);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBoxClose);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
@@ -192,5 +216,7 @@
         private Label label4;
         private Panel panel2;
         private PictureBox pictureBoxClose;
+        private ComboBox comboBox1;
+        private Label label1;
     }
 }
