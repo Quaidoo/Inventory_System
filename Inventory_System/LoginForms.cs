@@ -52,6 +52,7 @@ namespace Inventory_System
             cm = new SqlCommand("SELECT * FROM tbUser WHERE username=@username AND password=@password", con);
             cm.Parameters.AddWithValue("@username", txtName.Text);
             cm.Parameters.AddWithValue("@password", txtPass.Text);
+            con.Open();
             string cmbItemValue = comboBox1.SelectedItem.ToString();
             if (dt.Rows.Count > 0)
             {
@@ -83,6 +84,7 @@ namespace Inventory_System
                 MessageBox.Show("Error");
 
             }
+            con.Close();
         }
 
         private void lblClear_Click(object sender, EventArgs e)
