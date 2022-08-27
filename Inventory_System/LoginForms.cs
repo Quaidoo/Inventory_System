@@ -67,14 +67,13 @@ namespace Inventory_System
                             this.Hide();
                         }
                         else
-
                         {
                             AttendantForm a = new AttendantForm();
                             a.Show();
                             this.Hide();
+
                         }
                     }
-
                 }
             }
             else

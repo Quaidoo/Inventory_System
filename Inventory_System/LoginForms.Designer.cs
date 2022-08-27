@@ -70,7 +70,7 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Admin",
-            "Attendant"});
+            "user"});
             this.comboBox1.Location = new System.Drawing.Point(1002, 563);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(242, 40);
