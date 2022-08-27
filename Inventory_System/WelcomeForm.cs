@@ -27,7 +27,7 @@ namespace Inventory_System
             {
                 progressBar1.Value = 0;
                 timer1.Stop();
-                LoginForm login = new LoginForm();
+                LoginForms login = new LoginForms();
                 this.Hide();
                 login.ShowDialog();
             }
