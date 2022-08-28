@@ -38,11 +38,12 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to save this user?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("INSERT INTO tbUser(username,fullname,password,phone)VALUES(@username,@fullname,@password,@phone)", con);
+                    cm = new SqlCommand("INSERT INTO tbUser(username,fullname,password,phone,usertype)VALUES(@username,@fullname,@password,@phone,@usertype)", con);
                     cm.Parameters.AddWithValue("@username", txtUserName.Text);
                     cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
                     cm.Parameters.AddWithValue("@password", txtPass.Text);
                     cm.Parameters.AddWithValue("@phone", txtPhone.Text);
+                    cm.Parameters.AddWithValue("@usertype", textBox1.Text);
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
@@ -90,10 +91,11 @@ namespace Inventory_System
                 if (MessageBox.Show("Are you sure you want to update this user?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
 
-                    cm = new SqlCommand("UPDATE tbUser SET fullname = @fullname, password=@password, phone=@phone WHERE username LIKE '" + txtUserName.Text + "' ", con);
+                    cm = new SqlCommand("UPDATE tbUser SET fullname = @fullname, password=@password, phone=@phone, usertype=@usertype WHERE username LIKE '" + txtUserName.Text + "' ", con);
                     cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
                     cm.Parameters.AddWithValue("@password", txtPass.Text);
                     cm.Parameters.AddWithValue("@phone", txtPhone.Text);
+                    cm.Parameters.AddWithValue("@usertype", textBox1.Text);
                     con.Open();
                     cm.ExecuteNonQuery();
                     con.Close();
@@ -170,6 +172,11 @@ namespace Inventory_System
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

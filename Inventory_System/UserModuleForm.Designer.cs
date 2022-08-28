@@ -44,6 +44,8 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.txtRepass = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             this.SuspendLayout();
@@ -103,7 +105,7 @@
             // 
             // txtFullName
             // 
-            this.txtFullName.Location = new System.Drawing.Point(264, 215);
+            this.txtFullName.Location = new System.Drawing.Point(264, 205);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(615, 39);
             this.txtFullName.TabIndex = 4;
@@ -112,7 +114,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 215);
+            this.label3.Location = new System.Drawing.Point(62, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 32);
             this.label3.TabIndex = 3;
@@ -121,7 +123,7 @@
             // 
             // txtPass
             // 
-            this.txtPass.Location = new System.Drawing.Point(264, 303);
+            this.txtPass.Location = new System.Drawing.Point(264, 296);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(615, 39);
             this.txtPass.TabIndex = 6;
@@ -130,7 +132,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 303);
+            this.label4.Location = new System.Drawing.Point(62, 296);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 32);
             this.label4.TabIndex = 5;
@@ -139,7 +141,7 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(264, 451);
+            this.txtPhone.Location = new System.Drawing.Point(264, 467);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(615, 39);
             this.txtPhone.TabIndex = 8;
@@ -148,7 +150,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(62, 451);
+            this.label5.Location = new System.Drawing.Point(62, 467);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 32);
             this.label5.TabIndex = 7;
@@ -161,7 +163,7 @@
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(617, 517);
+            this.btnUpdate.Location = new System.Drawing.Point(617, 614);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(128, 73);
             this.btnUpdate.TabIndex = 10;
@@ -175,7 +177,7 @@
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(751, 517);
+            this.btnClear.Location = new System.Drawing.Point(751, 614);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(128, 73);
             this.btnClear.TabIndex = 10;
@@ -189,7 +191,7 @@
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.Location = new System.Drawing.Point(483, 517);
+            this.btnSave.Location = new System.Drawing.Point(483, 614);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(128, 73);
             this.btnSave.TabIndex = 11;
@@ -215,12 +217,31 @@
             this.label6.Text = "Confirm Password:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(264, 541);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(615, 39);
+            this.textBox1.TabIndex = 15;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(62, 541);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 32);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "Role:";
+            // 
             // UserModuleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(924, 615);
+            this.ClientSize = new System.Drawing.Size(924, 699);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtRepass);
             this.Controls.Add(this.btnSave);
@@ -266,5 +287,7 @@
         public TextBox txtPass;
         public TextBox txtPhone;
         public TextBox txtRepass;
+        public TextBox textBox1;
+        private Label label7;
     }
 }
