@@ -19,5 +19,5 @@ system we have an Admin and Attendants. The Admin gets to do the following;
 	•	close till(sales) for the day
 	•	 generate sales report for daily transactions
   
-  link to my youttube video ====
+  link to my youttube video ==== https://youtu.be/9aHzAg7Be30
 
